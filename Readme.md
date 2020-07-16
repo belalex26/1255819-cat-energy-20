@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Белова](https://up.htmlacademy.ru/adaptive/20/user/1255819).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Гинтер].
 
 ---
 
