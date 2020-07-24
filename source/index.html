@@ -2,11 +2,136 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
+  <body class="body">
+    <header class="header">
+      <a class="logo header__logo">
+        <img class="logo__img" src="https://via.placeholder.com/150x150"> <!--логотип-->
+        <p class="logo__title">
+          <span class="logo__title-bold">cat</span> energy</p>
+      </a>
+      <button class="header__burger" aria-label="открыть меню">
+        <span class="header__burger-line"></span>
+      </button>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="index-main">
+      <h1 class="visually-hidden">Кэт энерджи</h1>
+      <section class="promo">
+        <h2 class="title promo__title">Функциональное питание для котов</h2>
+        <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+        <img class="promo__img" src="https://via.placeholder.com/150x150"> <!--банка с кормом-->
+        <a class="promo__link" href="#">подобрать программу</a>
+      </section>
+      <div class="wrapper">
+        <section class="catalog">
+          <h2 class="section-title catalog__title">похудение</h2>
+          <p class="section-text catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="link catalog__link" href="#">каталог slim</a>
+        </section>
+        <section class="catalog">
+          <h2 class="section-title catalog__title">набор массы</h2>
+          <p class="section-text catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="link catalog__link" href="#">каталог pro</a>
+        </section>
+      </div>
+      <section class="about">
+        <h2 class=" title about__title">Как это работает</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="section-text about__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="about__item">
+            <p class="section-text about__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="about__item">
+            <p class="section-text about__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="about__item">
+            <p class="section-text about__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <h2 class="title example__title">Живой пример</h2>
+        <p class="section-text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__wrapper">
+        <p class="example__info">
+          <span class="example__info-text">5 кг</span>
+        </p>
+        <p class="example__info">
+          <span class="example__info-text">60 дней</span></p>
+        </div>
+        <p class="example__cost">затраты на питание: 15 000 руб.</p>
+        <div class="example__slider">
+          <div class="example__slider-before">
+            <img src="https://via.placeholder.com/150x150"> <!--кот до-->
+          </div>
+          <div class="example__slider-after">
+            <img src="https://via.placeholder.com/150x150"> <!--кот после-->
+          </div>
+          <div class="toggle"></div>
+        </div>
+      </section>
+      <section class="distributor">
+        <h2 class="title visually-hidden">для дилеров</h2>
+        <div class="distributor__wrapper">
+          <p class="section-title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="title visually-hidden">как добраться</h2>
+        <img class="footer__logo" src="https://via.placeholder.com/150x150"> <!--карта-->
+      </section>
+    </main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
 
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__link" href="#">
+          <img class="footer__logo" src="https://via.placeholder.com/150x150"> <!--логотип-->
+        </a>
+      </div>
+      <section class="social footer__social">
+        <h2 class="title visually-hidden">социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="facebook"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="copy footer__copy">
+        <h2 class="title visually-hidden">копирайт</h2>
+        <p class="copy__text">
+          <a class="copy__text-link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+        </p>
+        <p class="copy__text">
+          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copy__img" src="https://via.placeholder.com/150x150"> <!--лого академии-->
+          </a>
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
