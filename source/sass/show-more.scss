@@ -1,0 +1,42 @@
+.show-more__title{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_black;
+}
+
+.show-more__subtitle {
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.show-more__link{
+  display: block;
+  text-decoration: none;
+  background-color: $basic_grey;
+  color: $special_dark-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.show-more__link:focus{
+  outline: none;
+}
+
+.show-more__link:hover,
+.show-more__link:focus{
+  background-color: $special_grey-2;
+}
+
+.show-more__link:active{
+  color: transparentize($special_dark-grey, 0.7);
+}
+
+.show-more{
+  outline: 5px solid $red;
+  outline-offset: -5px;
+}
