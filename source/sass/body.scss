@@ -25,9 +25,13 @@
   font-weight: normal;
   font-style: normal;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-.visually-hidden {
+.visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -38,4 +42,26 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;}
+
+@media (min-width: $tablet-width){
+  .body__wrapper{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 25px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .body__wrapper{
+    display: grid;
+    grid-template-columns: 620px 620px;
+    grid-auto-flow: row;
+    grid-column-gap: 35px;
+    padding: 0 76px;
+  }
 }

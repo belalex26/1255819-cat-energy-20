@@ -1,11 +1,8 @@
 .link{
-  display: block;
   background-color: $basic_green;
   color: $basic-white;
   text-decoration: none;
   text-transform: uppercase;
-  outline: 5px solid $special_black;
-  outline-offset: -5px;
 }
 
 .link:focus{

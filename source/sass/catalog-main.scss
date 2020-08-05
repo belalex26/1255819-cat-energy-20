@@ -1,5 +1,12 @@
+.catalog-main{
+  background-color: $light-grey2;
+}
+
 .catalog-main__title{
+  font-family: $font-family-primary;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+  margin-left: 20px;
+  margin-top: 30px;
 }

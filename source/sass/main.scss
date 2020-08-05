@@ -23,4 +23,7 @@
 .main{
   outline: 5px solid $special_black;
   outline-offset: -5px;
+  background-color: $light-grey2;
+  display: grid;
+  grid-template-columns: 140px 140px;
 }

@@ -1,4 +1,13 @@
 .map{
   outline: 5px solid $red;
   outline-offset: -5px;
+  height: 380px;
+  background-color: $basic_green-2;
+}
+
+@media(min-width: $tablet-width){
+.map{
+  height: 410px;
+  background-color: $basic_green-2;
+  }
 }

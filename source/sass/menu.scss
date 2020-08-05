@@ -1,8 +1,14 @@
+.menu__wrapper{
+  position: relative;
+}
+
 .menu__list{
   list-style: none;
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .menu__link{
@@ -17,7 +23,82 @@
   width: 320px;
   margin: 0;
   border-bottom: 1px solid $special_grey-3;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 22px;
   text-align: center;
+}
+
+.menu__logo{
+  display: block;
+  margin-top: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .menu__burger{
+    display: none;
+  }
+
+  .menu__wrapper{
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__list{
+    display: flex;
+    min-width: 440px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu__item{
+    padding: 0;
+    width: auto;
+    border-bottom: none;
+  }
+
+  .menu__link{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  .menu__logo{
+    margin-right: 12.37%;
+  }
+
+}
+
+@media (min-width: $desktop-width){
+  .menu__wrapper{
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 60px;
+  }
+
+  .menu__burger{
+    display: none;
+  }
+
+  .menu__list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 35px;
+    grid-auto-flow: row;
+    min-width: 34.02%; /*490px*/
+    justify-content: space-around;
+  }
+
+  .menu__link{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 50%;
+    /*color: $basic-white;*/
+  }
 }
