@@ -1,7 +1,40 @@
 .footer{
   background-color: $basic_grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   outline: 5px solid $red;
   outline-offset: -5px;
 }
 
+.footer__wrapper{
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+@media (min-width: $tablet-width){
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer__social{
+    margin-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .footer{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .footer__social{
+    margin-left: 85px;
+  }
+}
 

@@ -71,20 +71,27 @@
     margin-left: 53px;
     margin-top: 32px;
     margin-bottom: 56px;
+  }
 
+  .catalog__link-pro{
+    padding-top: 25px;
+    margin-bottom: 56px;
   }
 }
 
 @media (min-width: $desktop-width){
   .catalog__text{
     padding-top: 65px;
-    margin-left: 52px;
-    width: 88%;
+    margin-left: 57px;
+    width: 85%;
   }
 
   .catalog__link{
     margin-top: 5px;
     margin-left: 55px;
     margin-bottom: 60px;
+  }
+  .catalog__link-pro{
+    padding-top: 0px;
   }
 }

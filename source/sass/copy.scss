@@ -1,6 +1,12 @@
 .copy{
   outline: 5px solid $special_black;
   outline-offset: -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87.5%;
+  margin-top: 21px;
+  padding-bottom: 30px;
 }
 
 .copy__link{
