@@ -19,13 +19,13 @@
           </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">главная</a>
+              <a class="menu__link" href="index.html">главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="form.html">подбор программы</a>
+              <a class="menu__link" href="#">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -37,84 +37,89 @@
       <form class="form main__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__item">
           <label class="form__label">имя:*
-            <input class="input form__input form__nickname" type="text" placeholder="барсик">
+            <input class="form__input form__nickname" type="text" placeholder="барсик">
           </label>
           <label class="form__label">вес (кг):*
-            <input class="input form__input form__weight" type="text" placeholder="7">
+            <input class="form__input form__weight" type="text" placeholder="7">
           </label>
           <label class="form__label">возраст (лет):
-            <input class="input form__input form__age" type="text" placeholder="7">
+            <input class="form__input form__age" type="text" placeholder="7">
           </label>
         </fieldset>
 
-        <fieldset class="form__item">
-          <legend сlass="form__title visually-hidden">Цель</legend>
+        <fieldset class="form__item form__intention">
           <label class="form__radio">
-            <input class="form__radio" type="radio" name="goal" value="losing-weight" checked>
+            <input class="form__radio-name" type="radio" name="goal" value="losing-weight" checked>
             <span class="form__radio-text">похудение</span>
           </label>
           <label class="form__radio">
-            <input class="form__radio" type="radio" name="goal" value="weight-set">
+            <input class="form__radio-name" type="radio" name="goal" value="weight-set">
             <span class="form__radio-text">набор массы</span>
           </label>
           <label class="form__radio">
-            <input class="form__radio" type="radio" name="goal" value="advice">
+            <input class="form__radio-name" type="radio" name="goal" value="advice">
             <span class="form__radio-text">не знаю (нужен ваш совет)</span>
           </label>
         </fieldset>
 
-        <fieldset class="form__item">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <label class="form__label">
-            <input class="input form__input form__email" type="email" placeholder="kuklachev@gmail.com">
+        <fieldset class="form__item form__owner">
+          <legend class="form__title form__owner-title">Контактные данные (владельца кота)</legend>
+          <label class="form__label">e-mail:*
+            <input class="form__input form__email" type="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="form__label">
-            <input class="input form__input form__phone" type="tel" placeholder="8 (960) 900-60-90">
+          <label class="form__label">телефон:*
+            <input class="form__input form__phone" type="tel" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
 
-        <fieldset class="form__item">
-          <legend class="form__title">Комментарий</legend>
+        <fieldset class="form__item form__comment">
+          <legend class="form__title form__comment-title">Комментарий</legend>
           <label class="form__label visually-hidden" for="comment"></label>
-          <textarea class="input form__message" name="comment" id="comment" rows="8" cols="80" placeholder="расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__message" name="comment" id="comment" rows="9" cols="50" placeholder="расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="form__item">
-          <legend class="form__title">Дополнительно</legend>
+        <fieldset class="form__item form__optionally">
+          <legend class="form__title form__optionally-title">Дополнительно</legend>
           <label class="form__checkbox">
-            <input class="form__checkbox" type="checkbox" name="optionally" value="sugar-substitute" checked>
+            <input class="form__checkbox-name" type="checkbox" name="optionally" value="sugar-substitute" checked>
             <span class="form__checkbox-text">сахарозаменитель</span>
           </label>
           <label class="form__checkbox">
-            <input class="form__checkbox" type="checkbox" name="optionally" value="water">
+            <input class="form__checkbox-name" type="checkbox" name="optionally" value="water" checked>
             <span class="form__checkbox-text">питьевая вода</span>
           </label>
           <label class="form__checkbox">
-            <input class="form__checkbox" type="checkbox" name="optionally" value="milk">
+            <input class="form__checkbox-name" type="checkbox" name="optionally" value="milk">
             <span class="form__checkbox-text">молоко</span>
           </label>
           <label class="form__checkbox">
-            <input class="form__checkbox" type="checkbox" name="optionally" value="vitamins">
+            <input class="form__checkbox-name" type="checkbox" name="optionally" value="vitamins">
             <span class="form__checkbox-text">витамины</span>
           </label>
         </fieldset>
         <button class="link form__btn">отправить заявку</button>
       </form>
 
-      <p class="main__footnote">* — Обязательные поля</p>
+      <p class="main__footnote">&#42 — Обязательные поля</p>
 
-      <section class="distributor">
+      <section class="distributor main__distributor">
         <h2 class="title visually-hidden">для дилеров</h2>
         <div class="distributor__wrapper">
-          <p class="section-title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="distributor-title">
+            <span class="distributor-invite">приглашаем</span>
+            к сотрудничеству дилеров!
+          <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
+            <span class="distributor__city">Санкт-Петербург</span>
+          </p>
         </div>
       </section>
-      <section class="map">
-        <h2 class="title visually-hidden">как добраться</h2>
-        <img class="footer__logo" src="https://via.placeholder.com/150x150"> <!--карта-->
-      </section>
-    </main>
+    </div>
+    <section class="map main__map">
+      <h2 class="title visually-hidden">как добраться</h2>
+      <img class="footer__logo" src="https://via.placeholder.com/150x150">
+    </section>
+  </main>
+
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__link" href="#">

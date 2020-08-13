@@ -1,29 +1,96 @@
+.main__footnote{
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding-bottom: 18px;
+}
+
+.main{
+  outline: 5px solid $special_black;
+  outline-offset: -5px;
+  background-color: $basic-white;
+  display: grid;
+  grid-template-columns: 160px 160px;
+}
 .main__title{
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  font-size: 36px;
+  line-height: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main__description{
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
-/*
+
 .main__form{
-
-}
-*/
-
-.main__footnote{
-  font-size: 14px;
-  line-height: 16px;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
-.main{
-  outline: 5px solid $special_black;
-  outline-offset: -5px;
-  background-color: $light-grey2;
-  display: grid;
-  grid-template-columns: 140px 140px;
+.main__distributor{
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.main__map{
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+@media (min-width: $tablet-width){
+  .main{
+    grid-template-columns: 132px 132px 132px 132px;
+    grid-column-gap: 60px;
+  }
+  .main__title{
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    }
+  .main__description{
+    font-size: 20px;
+    line-height: 30px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 65px;
+    width: 80%;
+  }
+  .main__form{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .main{
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+    justify-content: space-around;
+    position: relative;
+  }
+  .main__title{
+    padding-left: 110px;
+    margin-top: 57px;
+  }
+
+  .main__description{
+    padding-left: 110px;
+    width: 40%;
+  }
 }

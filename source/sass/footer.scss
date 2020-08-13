@@ -31,10 +31,30 @@
   .footer{
     padding-left: 110px;
     padding-right: 110px;
+    display: grid;
+    grid-template-columns: 244px 570px 244px;
+    grid-column-gap: 80px;
+  }
+
+  .footer__wrapper{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
   }
 
   .footer__social{
-    margin-left: 85px;
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    padding-left: 38px;
+  }
+
+  .footer__copy{
+    grid-column-start: -1;
+    grid-column-end: -2;
+    margin: 0;
+    padding-bottom: 109px;
   }
 }
 
