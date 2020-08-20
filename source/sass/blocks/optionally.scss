@@ -1,5 +1,4 @@
 .optionally{
-
   margin-bottom: 38px;
 
 }
@@ -83,6 +82,7 @@
 }
 
 @media (min-width: $tablet-width){
+
   .optionally__title::before{
     content: "";
     display: block;
@@ -94,7 +94,7 @@
   .optionally__title::after{
     content: "";
     display: block;
-    width: 330px;
+    width: 43%; /*330px*/
     height: 2px;
     background-color: $basic_green;
   }

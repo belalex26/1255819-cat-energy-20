@@ -17,11 +17,12 @@
 
 @media (min-width: $tablet-width){
   .footer{
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .footer__social{
     margin-left: 75px;
   }

@@ -1,20 +1,21 @@
 .header{
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
   text-transform: uppercase;
 
+  /*
   outline: 5px solid $basic-black;
   outline-offset: -5px;
-
+*/
   display: flex;
   flex-direction: column;
 
 }
 
 @media (min-width: $tablet-width) {
-  .header{
-    width: 100%;
+ .header{
+  min-width: 768px;
   }
 }

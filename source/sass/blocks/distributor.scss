@@ -1,8 +1,8 @@
 .distributor__wrapper{
   display: grid;
-  grid-template-columns: 140px 140px;
-  margin-left: 20px;
-  margin-right: 20px;
+  grid-template-columns: 50% 50%;
+  margin-left: 6.25%; /*20px*/
+  margin-right: 6.25%;
   padding-top: 12px;
 }
 

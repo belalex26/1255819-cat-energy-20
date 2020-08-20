@@ -25,7 +25,7 @@
               <a class="menu__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">подбор программы</a>
+              <a class="menu__link  menu__link--active" href="#">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -35,15 +35,15 @@
       <h1 class="main__title">Подбор программы</h1>
       <p class="main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form main__form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="form__item">
-          <label class="form__label">имя:*
-            <input class="form__input form__nickname" type="text" placeholder="барсик">
+        <fieldset class="form__item form__cat">
+          <label class="form__label form__nickname">имя:*
+            <input class="form__input" type="text" placeholder="барсик">
           </label>
-          <label class="form__label">вес (кг):*
-            <input class="form__input form__weight" type="text" placeholder="7">
+          <label class="form__label form__weight">вес (кг):*
+            <input class="form__input" type="text" placeholder="7">
           </label>
-          <label class="form__label">возраст (лет):
-            <input class="form__input form__age" type="text" placeholder="7">
+          <label class="form__label form__age">возраст (лет):
+            <input class="form__input" type="text" placeholder="7">
           </label>
         </fieldset>
 
@@ -64,12 +64,14 @@
 
         <fieldset class="form__item form__owner">
           <legend class="form__title form__owner-title">Контактные данные (владельца кота)</legend>
-          <label class="form__label">e-mail:*
-            <input class="form__input form__email" type="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__label">телефон:*
-            <input class="form__input form__phone" type="tel" placeholder="8 (960) 900-60-90">
-          </label>
+          <div class="form__wrapper">
+            <label class="form__label">e-mail:*
+              <input class="form__input form__email" type="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__label">телефон:*
+              <input class="form__input form__phone" type="tel" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="form__item form__comment">
@@ -78,46 +80,53 @@
           <textarea class="form__message" name="comment" id="comment" rows="9" cols="50" placeholder="расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
+
         <fieldset class="form__item form__optionally">
           <legend class="form__title form__optionally-title">Дополнительно</legend>
-          <label class="form__checkbox">
-            <input class="form__checkbox-name" type="checkbox" name="optionally" value="sugar-substitute" checked>
-            <span class="form__checkbox-text">сахарозаменитель</span>
-          </label>
-          <label class="form__checkbox">
-            <input class="form__checkbox-name" type="checkbox" name="optionally" value="water" checked>
-            <span class="form__checkbox-text">питьевая вода</span>
-          </label>
-          <label class="form__checkbox">
-            <input class="form__checkbox-name" type="checkbox" name="optionally" value="milk">
-            <span class="form__checkbox-text">молоко</span>
-          </label>
-          <label class="form__checkbox">
-            <input class="form__checkbox-name" type="checkbox" name="optionally" value="vitamins">
-            <span class="form__checkbox-text">витамины</span>
-          </label>
+
+          <div class="form__wrapper">
+            <label class="form__checkbox form__checkbox-sugar">
+              <input class="form__checkbox-name" type="checkbox" name="optionally" value="sugar-substitute" checked>
+              <span class="form__checkbox-text">сахарозаменитель</span>
+            </label>
+
+            <label class="form__checkbox form__checkbox-water">
+              <input class="form__checkbox-name" type="checkbox" name="optionally" value="water">
+              <span class="form__checkbox-text">питьевая вода</span>
+            </label>
+
+            <label class="form__checkbox form__checkbox-milk">
+              <input class="form__checkbox-name" type="checkbox" name="optionally" value="milk">
+              <span class="form__checkbox-text">молоко</span>
+            </label>
+
+            <label class="form__checkbox form__checkbox-vitamins">
+              <input class="form__checkbox-name" type="checkbox" name="optionally" value="vitamins">
+              <span class="form__checkbox-text">витамины</span>
+            </label>
+          </div>
         </fieldset>
         <button class="link form__btn">отправить заявку</button>
       </form>
 
       <p class="main__footnote">&#42 — Обязательные поля</p>
-
-      <section class="distributor main__distributor">
-        <h2 class="title visually-hidden">для дилеров</h2>
-        <div class="distributor__wrapper">
-          <p class="distributor-title">
-            <span class="distributor-invite">приглашаем</span>
-            к сотрудничеству дилеров!
-          <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
-            <span class="distributor__city">Санкт-Петербург</span>
-          </p>
-        </div>
-      </section>
-    </div>
-    <section class="map main__map">
-      <h2 class="title visually-hidden">как добраться</h2>
-      <img class="footer__logo" src="https://via.placeholder.com/150x150">
-    </section>
+      <div class="main__wrapper">
+        <section class="distributor main__distributor">
+          <h2 class="title visually-hidden">для дилеров</h2>
+          <div class="distributor__wrapper">
+            <p class="distributor-title">
+              <span class="distributor-invite">приглашаем</span>
+              к сотрудничеству дилеров!
+            <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
+              <span class="distributor__city">Санкт-Петербург</span>
+            </p>
+          </div>
+        </section>
+        <section class="map main__map">
+          <h2 class="title visually-hidden">как добраться</h2>
+          <img class="footer__logo" src="https://via.placeholder.com/150x150">
+        </section>
+      </div>
   </main>
 
     <footer class="footer">

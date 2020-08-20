@@ -34,6 +34,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .menu__burger{
     display: none;
   }
@@ -63,9 +64,24 @@
   }
 
   .menu__link{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    padding-bottom: 7px;
+  }
+
+  .menu__link:hover{
+    opacity: 0.6;
+  }
+
+  .menu__link:active,
+  .menu__link:focus{
+    outline: none;
+    opacity: 0.3;
+  }
+
+  .menu__link--active{
+    border-bottom: 2px solid $basic_green;
   }
 
   .menu__logo{
