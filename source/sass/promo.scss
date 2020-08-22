@@ -1,0 +1,25 @@
+.promo__wrapper{
+  background-color: $basic_green;
+  color: $basic-white;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__subtitle{
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link{
+  font-size: 20px;
+  padding: 14px 26px;
+}
+
+.promo{
+  outline: 5px solid $red;
+  outline-offset: -5px;
+}
