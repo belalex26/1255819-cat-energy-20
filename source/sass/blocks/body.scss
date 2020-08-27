@@ -25,10 +25,19 @@
   font-weight: normal;
   font-style: normal;
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 810px;
+  }
+
+  @media (min-width: $desktop-width){
+    max-width: 1440px;
+  }
 }
 
 .visually-hidden{
