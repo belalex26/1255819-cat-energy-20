@@ -1,39 +1,37 @@
-.distributor__wrapper {
+.distributor {
+  background-color: $basic_grey;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-left: 6.25%; /*20px*/
-  margin-right: 6.25%;
-  padding-top: 12px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 200px 180px;
-    grid-column-gap: 250px;
+    background-color: $basic-white;
+    width: 768px;
     margin: 0;
-    padding-left: 71px;
-    padding-right: 71px;
-    padding-top: 53px;
-    padding-bottom: 35px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    z-index: 10;
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
     display: grid;
-    grid-template-columns: 180px 180px;
-    grid-column-gap: 75px;
     margin: 0;
-    padding-right: 71px;
+    padding-right: 0;
     padding-top: 40px;
     padding-bottom: 35px;
+    position: absolute;
+    left: 111px;
+    z-index: 10;
+    background-color: $basic-white;
+    margin-top: 96px;
   }
 }
 
-.distributor-invite {
-  display: block;
-  padding-bottom: 5px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 4px;
-  }
+.distributor--index {
+  background-color: $basic-white;
 }
 
 .distributor-title {
@@ -43,10 +41,19 @@
   color: $basic-black;
   grid-column-start: 1;
   grid-column-end: 2;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    width: 50%;
+    margin-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 61%;
+    margin-left: 74px;
+    margin-top: 24px;
   }
 }
 
@@ -55,38 +62,23 @@
   line-height: 20px;
   grid-column-start: -1;
   grid-column-end: -2;
+  justify-self: end;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    width: 45%;
+    margin-right: 73px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-  }
-}
-
-.distributor {
-  padding-top: 6px;
-  padding-bottom: 10px;
-  outline: 5px solid $red;
-  outline-offset: -5px;
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 111px;
-    z-index: 10;
-    background-color: $basic-white;
-    margin-top: 96px;
-  }
-}
-
-
-.distributor__city{
-
-  @media (min-width: $tablet-width) {
-  display: block;
-  padding-top: 20px;
+    width: 55%;
+    grid-column-start: -1;
+    grid-column-end: -2;
+    margin-top: 19px;
+    margin-right: 86px;
   }
 }

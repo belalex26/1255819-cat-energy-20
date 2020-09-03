@@ -1,10 +1,18 @@
 .example {
   background-color: $light-grey;
   color: $basic-black;
-  outline: 5px solid $red;
-  outline-offset: -5px;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    background: linear-gradient( to top, $basic_grey 42.5%, $basic-white 42.5%);
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: -63px;
+    background: linear-gradient( to right, $basic_grey 74%, $light-grey 74%);
+  }
+}
+
+.example__content {
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
@@ -15,49 +23,39 @@
   }
 
   @media (min-width: $desktop-width) {
-
-    margin: 0; /*обнуление*/
-    margin-top: -180px;
-    padding: 0;
-    background-color: $basic_grey;
-    display: grid;
-    grid-template-columns: 560px 690px;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 100px;
-    padding-bottom: 70px;
+    background: linear-gradient( to right, $basic_grey 74.5%, $light-grey 74.5%);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 81px;
   }
 }
 
 .example__title {
   font-size: 36px;
+  font-weight: normal;
   line-height: 40px;
   margin-left: 20px;
-  padding-top: 30px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width){
     font-size: 60px;
     line-height: 60px;
-    margin-left: 30px;
-    padding-top: 42px;
-    grid-column-start: 1;
-    grid-column-end: -1;
+    margin-left: 0;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     width: 1325px;
-    margin: 0;
+    margin-top: -125px;
+    margin-left: 40px;
     font-size: 60px;
     line-height: 60px;
-    padding-left: 110px;
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 70px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: $basic-white;
+    background-color: $transparent;
   }
 }
 
@@ -68,31 +66,27 @@
   color: $special_dark-grey;
   width: 87.18%;
   padding-left: 20px;
-  margin-top: 35px;
+  margin-top: 32px;
   margin-bottom: 10px;
 
 
   @media (min-width: $tablet-width) {
     margin-top: 63px;
-    padding-left: 30px;
+    padding-left: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 6px;
     grid-column-start: 1;
     grid-column-end: -1;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
-    line-height: 26px;
-    margin-top: 70px;
-    padding-left: 110px;
-    margin-bottom: 50px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: 75%;
+    line-height: 24px;
+    margin-top: 76px;
+    padding-left: 40px;
+    margin-bottom: 38px;
+    width: 33.5%;
   }
 }
 
@@ -105,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0px;
-    padding-left: 30px;
+    padding-left: 0;
     flex-direction: row;
     justify-content: flex-start;
     grid-column-start: 1;
@@ -113,13 +107,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
     padding: 0;
-    margin: 0;
-    margin-left: 110px;
+    margin-left: 40px;
     margin-bottom: 50px;
   }
 }
@@ -173,6 +162,7 @@
       font-size: 14px;
       top: 60px;
       left: 30px;
+      background-color:$basic-white;
     }
   }
 
@@ -214,6 +204,7 @@
       width: 134px;
       top: 60px;
       left: 10px;
+      background-color:$basic-white;
     }
   }
 
@@ -233,6 +224,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 19px;
+  margin-bottom: 38px;
 
 
   @media (min-width: $tablet-width) {
@@ -252,12 +244,8 @@
     margin: 0;
     font-size: 20px;
     line-height: 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
     width: 80%;
-    padding-left: 110px;
+    padding-left: 40px;
     text-align: left;
   }
 }
@@ -274,15 +262,14 @@
     @media (min-width: $tablet-width) {
       grid-column-start: 1;
       grid-column-end: -1;
-      margin-top: 70px;
-      padding-bottom: 74px;
+      margin-top: 56px;
+      padding-bottom: 56px;
+      width: 100%;
     }
 
     @media (min-width: $desktop-width) {
-      grid-column-start: -1;
-      grid-column-end: -2;
-      grid-row-start: 1;
-      grid-row-end: -1;
-      margin-top: 12px;
+      position: absolute;
+      top: -190px;
+      right: -70px;
   }
 }

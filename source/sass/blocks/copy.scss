@@ -1,15 +1,45 @@
-.copy{
-  outline: 5px solid $special_black;
-  outline-offset: -5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 87.5%;
-  margin-top: 21px;
+.copy {
+  font-family: $font-family-secondary;
   padding-bottom: 30px;
 }
 
-.copy__link{
+.copy__link {
   text-decoration: none;
   color: $special_dark-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 281px;
+
+  &::after {
+    content: "";
+    background-image: url(../../img/htmlacademy.svg);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34px;
+    margin-left: 20px;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    margin-top: 6px;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
 }
+
+.copy__link:hover {
+  &::after {
+    background-image: url(../../img/htmlacademy-hover.svg);
+  }
+}
+

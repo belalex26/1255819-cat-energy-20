@@ -1,4 +1,4 @@
-.header{
+.header {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
@@ -6,35 +6,20 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width){
     min-width: 768px;
-  }
-
-  @media (min-width: $desktop-width){
     z-index: 3;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 }
 /*
-.header__container-index{
-  @media (min-width: $desktop-width){
-    position: relative;
+.header__form {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
-.header__container-index::after{
-  @media (min-width: $desktop-width){
-    position: absolute;
-    content:"";
-    display: block;
-    width: 50%;
-    min-height: 696px;
-    top: 0;
-    right: 0;
-    left: auto;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-color: $basic_green;
-    background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}*/
+*/

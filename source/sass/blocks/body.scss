@@ -28,16 +28,8 @@
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  max-width: 500px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    max-width: 810px;
-  }
-
-  @media (min-width: $desktop-width){
-    max-width: 1440px;
-  }
 }
 
 .visually-hidden{
@@ -72,5 +64,6 @@ img{
     grid-auto-flow: row;
     grid-column-gap: 35px;
     padding: 0 76px;
+    margin: 0 auto;
   }
 }

@@ -8,7 +8,8 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="menu menu--closed menu--nojs">
+      <div class="container">
+        <nav class="menu menu--closed menu--nojs">
         <a class="logo menu__logo" href="index.html">
           <picture> <!--логотип-->
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -29,14 +30,15 @@
             <a class="menu__link" href="form.html">подбор программы</a>
           </li>
         </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="catalog-main">
       <h1 class="catalog-main__title">Каталог продукции</h1>
       <section class="goods">
         <h2 class="visually-hidden">список товаров</h2>
         <div class="container">
-        <ul class="goods__list">
+          <ul class="goods__list">
           <li class="product goods__item">
             <a class="product__link-img" href="#">
               <picture> <!--фото товара-->
@@ -231,12 +233,12 @@
             <p class="goods__smSubtitle">На самом деле вкусов гораздо больше!</p>
             <a class="goods__smLink" href="#">показать все</a>
           </li>
-        </ul>
+          </ul>
         </div>
       </section>
-      <div class="catalog-main__wrapper">
-        <section class="optionally">
-          <h2 class="optionally__title">Дополнительные товары</h2>
+      <section class="optionally">
+        <h2 class="optionally__title">Дополнительные товары</h2>
+        <div class="container">
           <ul class="optionally__list">
             <li class="optionally__item">
               <h3 class="optionally__item-title">сахорозаменитель</h3>
@@ -287,55 +289,54 @@
               <a class="link optionally__btn" href="#">заказать</a>
             </li>
           </ul>
+        </div>
         </section>
         <section class="catalog-promo">
           <h2 class="visually-hidden">Промо-акция</h2>
           <p class="catalog-promo__text">Закажите все и получите чехол для кота в подарок!</p>
         </section>
-        <section class="distributor">
-          <h2 class="title visually-hidden">для дилеров</h2>
-          <div class="distributor__wrapper">
-            <p class="distributor-title">
-              <span class="distributor-invite">приглашаем</span>
-              к сотрудничеству дилеров!
-            <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
-              <span class="distributor__city">Санкт-Петербург</span>
-            </p>
-          </div>
-        </section>
-      </div>
       <section class="map">
         <h2 class="title visually-hidden">как добраться</h2>
-        <img class="footer__logo" src="https://via.placeholder.com/150x150"> <!--карта-->
+        <div class="distributor">
+          <p class="distributor-title">
+            приглашаем <br>
+            к сотрудничеству дилеров!
+          <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+        </div>
+        <div class="map-map">
+        <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3000311692151!2d30.3219637864198!3d59.93877828687783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598681733418!5m2!1sru!2sru"></iframe>
+<!--карта-->
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">
-        <a class="footer__link" href="#">
-          <img class="logo-text" src="https://via.placeholder.com/150x150" alt="Cat Energy"> <!--логотип текст-->
-        </a>
-      </div>
-      <section class="social footer__social">
-        <h2 class="title visually-hidden">социальные сети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="вконтакте"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="instagram"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="facebook"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="copy footer__copy">
-        <h2 class="title visually-hidden">копирайт</h2>
-          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
-          <a class="copy__link-img" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copy__img" src="https://via.placeholder.com/150x150" width="28" height="35"> <!--лого академии-->
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="footer__link" href="#">
+            <img class="footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy"> <!--логотип текст-->
           </a>
-      </section>
+          <section class="social footer__social">
+            <h2 class="title visually-hidden">социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item social__vk">
+                <a class="social__link" href="#" aria-label="вконтакте"></a>
+              </li>
+              <li class="social__item social__inst">
+                <a class="social__link" href="#" aria-label="instagram"></a>
+              </li>
+              <li class="social__item social__fb">
+                <a class="social__link" href="#" aria-label="facebook"></a>
+              </li>
+            </ul>
+          </section>
+          <section class="copy footer__copy">
+            <h2 class="title visually-hidden">копирайт</h2>
+              <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+          </section>
+        </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

@@ -5,11 +5,12 @@
 .catalog-main__title{
   margin: 0;
   font-family: $font-family-primary;
+  font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
   padding-left: 20px;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 38px;
   border-top: 1px solid $special_grey-2;
   border-bottom: 1px solid $special_grey-2;
@@ -20,6 +21,7 @@
     font-size: 58px;
     font-style: normal;
     margin-top: 16px;
+    padding-top: 21px;
     padding-left: 0;
     margin-left: 30px;
     border: none;
@@ -28,10 +30,11 @@
 
 @media (min-width: $desktop-width){
   .catalog-main__title{
-    margin-top: 24px;
-    padding-bottom: 46px;
     margin-left: 110px;
     width: 768px;
+    margin-top: 48px;
+    padding-bottom: 43px;
+
   }
   .catalog-main__wrapper{
     position: relative;

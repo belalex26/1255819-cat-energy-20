@@ -1,46 +1,56 @@
-.footer{
+.footer {
   background-color: $basic_grey;
+  padding-top: 18px;
+}
+
+.footer__wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 5px solid $red;
-  outline-offset: -5px;
+  margin-right: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 13px;
     display: grid;
     grid-template-columns: 244px 570px 244px;
     grid-column-gap: 80px;
   }
 }
 
-.footer__wrapper{
-  padding-top: 35px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+.footer__link {
+  padding-top: 24px;
+  padding-bottom: 27px;
 
-  @media (min-width: $desktop-width){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
   }
 }
 
 .footer__social{
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-left: 75px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin: 0;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -50,10 +60,17 @@
 }
 
 .footer__copy{
-  @media (min-width: $desktop-width){
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
     grid-column-start: -1;
     grid-column-end: -2;
-    margin: 0;
     padding-bottom: 109px;
   }
 }

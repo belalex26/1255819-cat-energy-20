@@ -2,9 +2,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -14,13 +12,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 44px;
+    padding: 0;
+    padding-top: 42px;
   }
 }
 
 .menu__list {
+  min-width: 320px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -33,6 +31,7 @@
     min-width: 440px;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,7 +116,7 @@
   margin: 0;
   border-bottom: 1px solid $special_grey-3;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -135,21 +134,38 @@
   }
 }
 
+.menu--closed .menu__logo{
+  margin-left: 0;
+}
+
 .menu__logo {
   display: block;
   margin-top: 12px;
-  padding-left: 20px;
   padding-bottom: 14px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active{
+    outline: none;
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    margin-left: 0;
+    margin-top: 3px;
   }
 }
 
 .menu__burger {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 3px;
+  right: 15px;
   z-index: 2;
   display: block;
   width: 34px;
@@ -174,6 +190,7 @@
 }
 
 .menu--closed .menu__burger{
+  right: -6px;
   &::before{
   content: "";
   position: absolute;
@@ -187,9 +204,6 @@
 }
 
 .menu--opened .menu__burger{
-  top: 16px;
-  right: 16px;
-
   &::before,
   &::after{
     content: "";
@@ -225,25 +239,4 @@
   }
 }
 
-.menu__index{
-  @media (min-width: $desktop-width){
-    position: relative;
-
-    &::after{
-      position: absolute;
-      content:"";
-      display: block;
-      width: 50%;
-      min-height: 696px;
-      top: 0;
-      right: 0;
-      left: auto;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-color: $basic_green;
-      background-position: 0%;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-}
 

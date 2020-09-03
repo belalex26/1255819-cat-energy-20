@@ -1,21 +1,45 @@
 .map {
-  outline: 5px solid $red;
-  outline-offset: -5px;
-  height: 362px;
   min-width: 320px;
-  background-color: $basic_green-2;
+  background-color: $basic-white;
 
 
   @media(min-width: $tablet-width) {
     width: 100%;
-    height: 410px;
-    background-color: $basic_green-2;
+    background-color: $basic_grey;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row-start: 1;
-    grid-row-start: -1;
-    z-index: 1;
     width: 100%;
+  }
+}
+
+.map-map {
+  width: 100%;
+  height: 362px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.map__img {
+  border: none;
+  min-width: 100%;
+  min-height: 362px;
+
+  @media(min-width: $tablet-width) {
+    min-height: 400px;
   }
 }

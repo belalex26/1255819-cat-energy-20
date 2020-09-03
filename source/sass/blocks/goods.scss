@@ -1,57 +1,55 @@
-.goods__list{
+.goods__list {
   padding: 0;
   margin: 0;
   list-style: none;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: grid;
-    margin-left: -5px;
+    margin-left: -4px;
     grid-template-columns: 324px 324px;
     grid-template-rows: auto auto auto ;
     grid-column-gap: 65px;
-    grid-row-gap: 140px;
+    grid-row-gap: 142px;
     padding-top: 136px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     display: grid;
+    margin-left: 0;
     grid-template-columns: 245px 245px 245px 245px;
     grid-template-rows: auto auto;
     grid-column-gap: 80px;
-    grid-row-gap: 150px;
-    padding-top: 140px;
+    grid-row-gap: 145px;
+    padding-top: 135px;
   }
 }
 
-.goods{
-  outline: 5px solid $special_black;
-  outline-offset: -5px;
+.goods {
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: grid;
     width: 100%;
   }
-
-  @media (min-width: $desktop-width){}
 }
 
-.goods__smItem{
-  padding-bottom: 32px;
+.goods__smItem {
+  padding-bottom: 23px;
+  border-bottom: 2px solid $basic_grey;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid $basic_grey;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
 }
 
-.goods__smTitle{
+.goods__smTitle {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -62,66 +60,71 @@
   margin-bottom: 8px;
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     display: block;
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 30px;
-    left: 45.5%;
-    background-color: $red;
+    top: 29px;
+    left: 45%;
+    background-image: url(../../img/icon-plus.svg);
+    background-position: center;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    padding-top: 164px;
+    padding-top: 160px;
     margin-bottom: 25px;
     width: 50%;
 
-    &::before{
+    &::before {
       content: "";
       width: 60px;
       height: 60px;
-      top: 56px;
-      left: 32%;
+      top: 50px;
+      left: 30.8%;
     }
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 22px;
-    padding-top: 152px;
+    padding-top: 159px;
 
     width: 70%;
 
-    &::before{
+    &::before {
       top: 52px;
       left: 32%;
     }
   }
 }
 
-.goods__smSubtitle{
+.goods__smSubtitle {
   margin-top: 0;
   font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
   text-align: center;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
     width: 70%;
-    margin-bottom: 85px;
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
-.goods__smLink{
+.goods__smLink {
   text-transform: uppercase;
   text-decoration: none;
   background-color: $basic_grey;
@@ -134,32 +137,29 @@
   margin-left: 20px;
   margin-right: 20px;
 
-  &:focus{
-    outline: none;
-  }
-
-  &:hover,
-  &:focus{
+  &:hover {
     background-color: $special_grey-2;
   }
 
-  &:active{
+  &:active,
+  &:focus {
+    outline: none;
     color: transparentize($special_dark-grey, 0.7);
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     padding: 10px 77px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     font-size: 16px;
     padding: 9px 38px;
   }
 }
 
-.goods__show-more{
-border-bottom: 1px solid $special_grey-3;
+.goods__show-more {
+  border-bottom: 1px solid $special_grey-3;
 }
 
 
