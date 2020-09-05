@@ -6,20 +6,28 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
 
   @media (min-width: $tablet-width){
-    min-width: 768px;
     z-index: 3;
     margin-top: 2px;
     margin-bottom: 2px;
   }
-}
-/*
-.header__form {
-  @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: -1;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
-*/
+
+.header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}

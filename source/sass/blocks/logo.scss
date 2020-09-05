@@ -1,11 +1,10 @@
 .logo{
   @media(min-width: $tablet-width) {
-    padding-left: 0;
     margin-top: 0px;
   }
 }
 
-.logo__img{
+.logo__img {
     @media(min-width: $tablet-width) {
     width: 174px;
     height: 52px;
@@ -15,7 +14,6 @@
     width: 202px;
     height: 59px;
     margin-top: 8px;
-
   }
 }
 

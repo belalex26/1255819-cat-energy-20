@@ -16,21 +16,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 263px;
+    padding-bottom: 257px;
     position: relative;
 
     &::after{
       content: "";
       display: block;
       position: absolute;
-      top: -125px;
+      top: -130px;
       right: 0;
       min-width: 720px;
       min-height: 696px;
       background-color: $basic_green;
       background-image: url("../../img/index-background-desktop@1x.jpg");
       background-repeat: round;
-
     }
   }
 }
@@ -70,7 +69,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 95px;
-    margin-left: 115px;
+    margin-left: 78px;
     margin-bottom: 40px;
   }
 }
@@ -93,7 +92,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 0;
-    margin-left: 120px;
+    margin-left: 80px;
     margin-bottom: 52px;
   }
 }
@@ -104,8 +103,6 @@
   padding: 10.5px 68px;
   margin-top: 4px;
   margin-bottom: 19px;
-  margin-left: 20px;
-  margin-right: 20px;
   text-align: center;
   order: 1;
 
@@ -124,7 +121,7 @@
   @media (min-width: $desktop-width) {
     width: 220px;
     font-size: 18px;
-    margin-left: 120px;
+    margin-left: 79px;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;

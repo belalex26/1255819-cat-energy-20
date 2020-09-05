@@ -1,6 +1,6 @@
 .map {
   min-width: 320px;
-  background-color: $basic-white;
+  background-color: $basic_grey;
 
 
   @media(min-width: $tablet-width) {
@@ -11,6 +11,10 @@
   @media (min-width: $desktop-width) {
     width: 100%;
   }
+}
+
+.map--index {
+  background-color: $basic-white;
 }
 
 .map-map {

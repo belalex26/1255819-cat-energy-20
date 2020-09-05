@@ -20,7 +20,7 @@
   font-style: normal;
 }
 
-.body{
+.body {
   font-family: $font-family-primary, $font-family-secondary, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -32,7 +32,7 @@
 
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -47,23 +47,23 @@
 
 img{
   max-width: 100%;
-  height: auto;}
+  height: auto;
+}
 
-@media (min-width: $tablet-width){
-  .body__wrapper{
+.body__wrapper {
+
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: auto auto;
     gap: 25px;
   }
-}
 
-@media (min-width: $desktop-width){
-  .body__wrapper{
+  @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 620px 620px;
+    width: 1220px;
+    grid-template-columns: 570px 570px;
     grid-auto-flow: row;
-    grid-column-gap: 35px;
-    padding: 0 76px;
+    grid-column-gap: 80px;
     margin: 0 auto;
   }
 }

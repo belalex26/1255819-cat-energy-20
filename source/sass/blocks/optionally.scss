@@ -3,8 +3,6 @@
 }
 
 .optionally__list {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 0;
   margin-bottom: 72px;
   padding: 0;
@@ -20,8 +18,7 @@
   @media (min-width: $desktop-width) {
     border-left: none;
     border-right: none;
-    margin-left: 44px;
-    margin-right: 357px;
+    margin-right: 318px;
     margin-bottom: 84px;
   }
 }
