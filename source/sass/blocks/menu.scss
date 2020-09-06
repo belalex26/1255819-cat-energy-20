@@ -151,10 +151,9 @@
   }
 }
 
-/*
-.menu--closed .menu__logo{
-  margin-left: 20px;
-}*/
+.menu--closed {
+  margin-bottom: 3px;
+}
 
 .menu--closed .menu__logo--index{
   margin-left: 20px;
@@ -198,7 +197,7 @@
 
 .menu__burger {
   position: absolute;
-  top: 4px;
+  top: 16px;
   right: 15px;
   z-index: 2;
   display: block;
@@ -224,13 +223,14 @@
 }
 
 .menu--closed .menu__burger{
-  right: -6px;
+  right: 12px;
+  top: 25px;
 
   &::before{
   content: "";
   position: absolute;
-  top: 20px;
-  left: -16px;
+  top: 0px;
+  left: 0px;
   width: 24px;
   height: 2px;
   background-color: $basic-black;
@@ -247,7 +247,7 @@
       background-color: $basic-black;
       width: 25px;
       height: 1.5px;
-      top: 25px;
+      top: 15px;
       right: 4px;
   }
 

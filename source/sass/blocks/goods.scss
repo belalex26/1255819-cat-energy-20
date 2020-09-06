@@ -1,34 +1,48 @@
 .goods__list {
   padding: 0;
-  margin: 0;
   list-style: none;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    margin-left: -4px;
     grid-template-columns: 324px 324px;
     grid-template-rows: auto auto auto ;
     grid-column-gap: 65px;
     grid-row-gap: 142px;
-    padding-top: 136px;
+    padding-top: 119px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-left: 0;
     grid-template-columns: 245px 245px 245px 245px;
     grid-template-rows: auto auto;
     grid-column-gap: 80px;
     grid-row-gap: 145px;
-    padding-top: 135px;
+    padding-top: 140px;
+    margin-top: 0;
+    margin-bottom: 17px;
   }
 }
 
 .goods {
+  border-top: 1px solid $special_grey-2;
 
   @media (min-width: $tablet-width) {
+    border: none;
     display: grid;
     width: 100%;
+  }
+}
+
+.goods__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -68,7 +82,7 @@
     height: 30px;
     top: 29px;
     left: 45%;
-    background-image: url(../../img/icon-plus.svg);
+    background-image: url("../../img/icon-plus.svg");
     background-position: center;
   }
 
@@ -93,7 +107,6 @@
     line-height: 22px;
     margin-bottom: 22px;
     padding-top: 159px;
-
     width: 70%;
 
     &::before {

@@ -1,5 +1,9 @@
 .optionally {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .optionally__list {
@@ -66,7 +70,7 @@
   justify-content: space-between;
   padding-left: 20px;
   margin-bottom: 33px;
-  padding-top: 28px;
+  padding-top: 10px;
   font-size: 22px;
   line-height: 24px;
   font-weight: normal;
@@ -86,7 +90,7 @@
     padding: 0;
     font-size: 36px;
     display: flex;
-    padding-top: 78px;
+    padding-top: 75px;
     padding-bottom: 87px;
 
     &::before {
@@ -110,23 +114,28 @@
     margin: 0;
     padding: 0;
     font-size: 36px;
-    display: flex;
-    padding-top: 82px;
-    padding-bottom: 87px;
+    position: relative;
+    padding-top: 77px;
+    padding-bottom: 82px;
+    padding-left: 105px;
 
     &::before {
       content: "";
-      display: block;
+      position: absolute;
       width: 70px;
       height: 2px;
       background-color: $basic_green;
+      top: 94px;
+      left: 0;
     }
     &::after {
       content: "";
-      display: block;
-      width: 957px;
+      position: absolute;
+      width: 958px;
       height: 2px;
       background-color: $basic_green;
+      top: 89px;
+      left: 482px;
     }
   }
 }

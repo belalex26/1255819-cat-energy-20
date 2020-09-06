@@ -41,9 +41,9 @@
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
             <a class="link promo__link" href="form.html">подобрать программу</a>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1.png">
-              <img class="promo__img" src="img/index-can-mobile@1x.png" alt="банка с кормом">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, index-can-desktop@2x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1.png, index-can-tablet@2x.jpg">
+              <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png" alt="банка с кормом">
             </picture>
           </div>
         </div>
@@ -85,52 +85,51 @@
       <section class="example">
         <div class="container">
           <div class="example__content">
-
-          <h2 class="title example__title">Живой пример</h2>
-          <p class="section-text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__wrapper">
-            <p class="example__info">
-              <span class="example__info-text example__weight">5 кг</span>
+            <h2 class="title example__title">Живой пример</h2>
+            <p class="section-text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__wrapper">
+              <p class="example__info">
+                <span class="example__info-text example__weight">5 кг</span>
+              </p>
+              <p class="example__info">
+                <span class="example__info-text example__time">60 дней</span></p>
+            </div>
+            <p class="example__cost">затраты на питание:
+              <span class="example__cost-price">15 000 руб.</span>
             </p>
-            <p class="example__info">
-              <span class="example__info-text example__time">60 дней</span></p>
-          </div>
-          <p class="example__cost">затраты на питание:
-            <span class="example__cost-price">15 000 руб.</span>
-          </p>
-          <div class="example__toggle toggle">
-            <input class="toggle__input toggle__input--before visually-hidden" type="radio" id="before" name="example-input">
-            <input class="toggle__input toggle__input--after visually-hidden" type="radio" id="after" name="example-input">
+            <div class="example__toggle toggle">
+              <input class="toggle__input toggle__input--before visually-hidden" type="radio" id="before" name="example-input">
+              <input class="toggle__input toggle__input--after visually-hidden" type="radio" id="after" name="example-input">
 
-            <div class="toggle__items">
-              <div class="toggle__item toggle__item--before">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                  <img class="toggle__img" src="img/before-mobile@1x.png" alt="кот до">
-                </picture>
+              <div class="toggle__items">
+                <div class="toggle__item toggle__item--before">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
+                    <img class="toggle__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="кот до">
+                  </picture>
+                </div>
+                <div class="toggle__item toggle__item--after">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png">
+                    <img class="toggle__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="кот после">
+                  </picture>
+                </div>
               </div>
-              <div class="toggle__item toggle__item--after">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                  <img class="toggle__img" src="img/after-mobile@1x.png" alt="кот после">
-                </picture>
+
+              <div class="toggle__control">
+                <div class="toggle__control-wrapper">
+                  <label class="toggle__label toggle__label--before" for="before">Было</label>
+                  <div class="toggle__range">
+                    <div class="toggle__scale"></div>
+                    <button class="toggle__button" type="button">До/После</button>
+                  </div>
+                  <label class="toggle__label toggle__label--after" for="after">Стало</label>
+                </div>
               </div>
             </div>
-
-            <div class="toggle__control">
-              <div class="toggle__control-wrapper">
-              <label class="toggle__label toggle__label--before" for="before">Было</label>
-              <div class="toggle__range">
-                <div class="toggle__scale"></div>
-                <button class="toggle__button" type="button">До/После</button>
-              </div>
-              <label class="toggle__label toggle__label--after" for="after">Стало</label>
-            </div>
           </div>
-          </div>
-        </div>
         </div>
       </section>
 

@@ -1,5 +1,10 @@
 .catalog-main {
   background-color: $basic-white;
+  border-top: 1px solid $gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .catalog-main__title {
@@ -12,22 +17,23 @@
   line-height: 36px;
   color: $basic-black;
   padding-top: 26px;
-  padding-bottom: 38px;
-  border-top: 1px solid $special_grey-2;
-  border-bottom: 1px solid $special_grey-2;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     font-size: 58px;
     font-style: normal;
-    margin-top: 16px;
     padding-top: 21px;
     padding-left: 30px;
+    margin-left: 0;
+    margin-top: 12px;
+    padding-bottom: 41px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-left: 110px;
     padding-top: 56px;
     padding-bottom: 43px;
   }
