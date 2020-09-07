@@ -45,10 +45,10 @@
 }
 
 .social__vk {
-  background-image: url("../../img/icon-vk.svg");
+  background-image: url("../img/icon-vk.svg");
 
   &:hover {
-    background-image: url("../../img/icon_vkontakte-hover.svg");
+    background-image: url("../img/icon_vkontakte-hover.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
 }
 
 .social__inst {
-  background-image: url("../../img/icon-insta.svg");
+  background-image: url("../img/icon-insta.svg");
   margin-top: 4px;
   width: 16px;
   height: 16px;
@@ -66,7 +66,7 @@
   margin-right: 35px;
 
   &:hover {
-    background-image: url("../../img/icon_instagram-hover.svg");
+    background-image: url("../img/icon_instagram-hover.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -79,14 +79,13 @@
 }
 
 .social__fb {
-  background-image: url("../../img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
   width: 22px;
   height: 22px;
 
   &:hover {
-    background-image: url("../../img/icon_facebook-hover.svg");
+    background-image: url("../img/icon_facebook-hover.svg");
   }
-
 
   @media (min-width: $tablet-width) {
     width: 28px;

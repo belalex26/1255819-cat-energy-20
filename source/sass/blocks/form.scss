@@ -83,11 +83,6 @@
   }
 }
 
-.error {
-  border: 1px solid $special_red;
-  box-shadow: 0px 0px 2px 0 $special_red inset;
-}
-
 ::-webkit-input-placeholder {
   font-family: $font-family-primary;
   color: $special_dark-grey;
@@ -541,36 +536,34 @@
   }
 }
 
-.error2 {
-  border: 1px solid $special_red;
-  box-shadow: 0 0 2px 0 $special_red inset;
-}
-
 .form__email {
   position: relative;
   margin-top: 0;
   width: 72%; /*200px;*/
   border: 1px solid $special_grey;
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 91.5% 52.5%;
   padding-top: 16px;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
+  margin-top: 2px;
 
   &:focus,
   &:active {
     outline: none;
     box-shadow: 0 0 1px 0 $special_dark-grey inset;
     border: 1px solid $special_dark-grey;
-    background-image: url("../../img/icon_email.svg");
+    background-image: url("../img/icon_email.svg");
+
   }
 
   @media (min-width: $tablet-width) {
-    width: 83.5%;
+    width: 530px;
     margin-right: 7px;
-    padding-top: 21px;
+    padding-top: 20px;
+    padding-left: 18px;
     padding-bottom: 15px;
-    background-position: 96.5% 52%;
+    background-position: 96% 51%;
   }
 
   @media (min-width: $desktop-width) {
@@ -583,16 +576,47 @@
   }
 }
 
-.form__email .error2 {
+.error {
   border: 1px solid $special_red;
-  box-shadow: 0 0 2px 0 $special_red inset;
-  background-image: url("../../img/icon_phoneErr.svg");
+  box-shadow: 0px 0px 2px 0 $special_red inset;
+}
+
+.form__email--error {
+  border: 1px solid $special_red;
+  box-shadow: 0px 0px 2px 0 $special_red inset;
+  background-image: url("../img/icon_emailErr.svg");
+  background-repeat: no-repeat;
+
+  width: 72%; /*200px;*/
+  background-position: 91.5% 52.5%;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 530px;
+    margin-right: 7px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    background-position: 96% 51%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 465px;
+    background-position: 96.5% 50.5%;
+    margin-left: 16px;
+    padding-left: 18px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+  }
 }
 
 .form__phone {
   width: 67%; /*184px;*/
   border: 1px solid $special_grey;
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 93% 52.5%;
 
@@ -601,7 +625,7 @@
     outline: none;
     box-shadow: 0 0 1px 0 $special_dark-grey inset;
     border: 1px solid $special_dark-grey;
-    background-image: url("../../img/icon_phone.svg");
+    background-image: url("../img/icon_phone.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -627,11 +651,38 @@
   padding-top: 11px;
 }
 
-.form__phone .error2 {
-  border: 1px solid $special_red;
-  box-shadow: 0 0 2px 0 $special_red inset;
-  background-image: url("../../img/icon_phoneErr.svg");
+.form__phone .error {
+  background-image: url("../img/icon_phoneErr.svg");
 }
+
+.form__phone--error {
+  border: 1px solid $special_red;
+  box-shadow: 0px 0px 2px 0 $special_red inset;
+  background-image: url("../img/icon_phoneErr.svg");
+  background-repeat: no-repeat;
+
+  width: 67%; /*184px;*/
+  background-position: 93% 52.5%;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    margin-right: 8px;
+    padding-left: 22px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    background-position: 96.5% 52%;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+    padding-top: 23px;
+    margin-top: 0;
+    background-position: 96% 52%;
+    margin-right: 0;
+  }
+}
+
 
 /*комментарий*/
 .form__comment {
@@ -815,8 +866,6 @@
     align-items: center;
     margin-left: 0;
     padding-right: 45px;
-    /*
-    margin-right: 5px;*/
   }
 }
 
