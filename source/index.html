@@ -3,34 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/ArialMT.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="body">
     <header class="header">
-
-        <nav class="menu menu--closed menu--nojs">
-          <a class="logo menu__logo menu__logo--index">
-            <picture> <!--логотип-->
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="logo__img" src="img/logo-mobile.svg" width="193" height="38" alt="Cat Energy">
-            </picture>
-          </a>
-          <button class="menu__burger" aria-label="открыть меню">
-          </button>
-          <ul class="menu__list menu__list--while menu__list--index">
+      <nav class="menu menu--closed menu--nojs">
+        <a class="logo menu__logo menu__logo--index">
+          <picture> <!--логотип-->
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__img" src="img/logo-mobile.svg" width="193" height="38" alt="Cat Energy">
+          </picture>
+        </a>
+        <button class="menu__burger" aria-label="открыть меню"></button>
+        <ul class="menu__list menu__list--while menu__list--index">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">главная</a>
+          </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#">главная</a>
-            </li>
-              <li class="menu__item">
-              <a class="menu__link" href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+            <a class="menu__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="index-main">
       <h1 class="visually-hidden">Кэт энерджи</h1>
@@ -41,9 +42,9 @@
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
             <a class="link promo__link" href="form.html">подобрать программу</a>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, index-can-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1.png, index-can-tablet@2x.jpg">
-              <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png" alt="банка с кормом">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1.png, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="банка с кормом">
             </picture>
           </div>
         </div>
@@ -104,16 +105,16 @@
               <div class="toggle__items">
                 <div class="toggle__item toggle__item--before">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
-                    <img class="toggle__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="кот до">
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                    <img class="toggle__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="кот до">
                   </picture>
                 </div>
                 <div class="toggle__item toggle__item--after">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png">
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png">
-                    <img class="toggle__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="кот после">
+                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                    <img class="toggle__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после">
                   </picture>
                 </div>
               </div>
@@ -177,6 +178,5 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC08EhmP0VAmFx81zeuhFm1ZfTSzBKrQ30"></script>
   </body>
 </html>

@@ -7,7 +7,8 @@
   margin: 0 auto;
   color: $basic-white;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
@@ -34,7 +35,8 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: round;
 
-      @media (min-resolution: 2dppx) {
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
         width: 720px;
         height: 696px;
