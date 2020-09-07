@@ -1,0 +1,33 @@
+.header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width){
+    z-index: 3;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
