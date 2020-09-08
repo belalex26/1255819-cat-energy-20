@@ -1,4 +1,4 @@
-.social{
+.social {
   border-bottom: 1px solid $gray;
   border-top: 1px solid $gray;
   width: 100%;
@@ -16,7 +16,7 @@
   }
 }
 
-.social__list{
+.social__list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.social__item{
+.social__item {
   width: 22px;
   height: 22px;
   background-repeat: no-repeat;
@@ -37,8 +37,7 @@
   background-size: contain;
   cursor: pointer;
 
-  &:active,
-  &:focus {
+  &:active {
     outline: none;
     opacity: 0.3;
   }
@@ -49,6 +48,11 @@
 
   &:hover {
     background-image: url("../img/icon_vkontakte-hover.svg");
+  }
+
+  &:focus-within {
+    outline: none;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -69,6 +73,11 @@
     background-image: url("../img/icon_instagram-hover.svg");
   }
 
+  &:focus-within {
+    outline: none;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
@@ -85,6 +94,11 @@
 
   &:hover {
     background-image: url("../img/icon_facebook-hover.svg");
+  }
+
+  &:focus-within {
+    outline: none;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

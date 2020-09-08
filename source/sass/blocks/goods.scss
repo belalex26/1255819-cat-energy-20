@@ -1,9 +1,12 @@
 .goods__list {
+  border-top: 1px solid $special_grey-2;
   padding: 0;
   list-style: none;
-  margin-top: 0;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
+    border-top: none;
     display: grid;
     grid-template-columns: 324px 324px;
     grid-template-rows: auto auto auto ;
@@ -26,12 +29,16 @@
 }
 
 .goods {
-  border-top: 1px solid $special_grey-2;
 
   @media (min-width: $tablet-width) {
     border: none;
     display: grid;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
