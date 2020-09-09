@@ -44,7 +44,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -97px;
-    left: 95px;
+    left: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,7 +176,7 @@
     margin-right: auto;
     margin-bottom: 0;
     min-height: 627px;
-    background: linear-gradient( to right, $basic_grey 53%, $light-grey 53%);
+    background: linear-gradient( to right, $basic_grey 48%, $light-grey 48%);
 
     &::after {
       content: "";
@@ -224,9 +224,10 @@
   @media (min-width: $tablet-width) {
     left: 0;
     right: 0;
-    width: 53%;
+    width: 48%;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, $basic-white, $basic-white 169px, $basic_grey 169px, $basic_grey);
+    background:
+      linear-gradient(to bottom, $basic-white, $basic-white 169px, $basic_grey 169px, $basic_grey);
     transition: all 0.3s ease;
     z-index: 10;
 
@@ -266,11 +267,11 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 690px;
-    max-width: 690px;
+    width: 740px;
+    max-width: 740px;
     height: 517px;
     margin-right: 0;
-    margin-left: 40px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {

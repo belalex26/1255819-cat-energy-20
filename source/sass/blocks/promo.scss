@@ -2,23 +2,25 @@
 .promo {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 320px auto;
+  background-size: contain;
   background-position: center top;
   margin: 0 auto;
   color: $basic-white;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 709px;
+    min-width: 768px;
     background-image: none;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding-bottom: 257px;
     position: relative;
 
@@ -34,7 +36,8 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: round;
 
-      @media (min-resolution: 2dppx) {
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
         width: 720px;
         height: 696px;
@@ -44,6 +47,7 @@
 }
 
 .promo__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,41 +5,33 @@
   text-align: center;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     grid-column-start: -1;
     grid-column-end: -3;
-    margin-top: -105px;
-    margin-right: 140px;
+    margin-top: -224px;
+    margin-left: 251px;
+    margin-bottom: 75px;
   }
 
 
   @media (min-width: $desktop-width) {
-    margin-right: 448px;
-    margin-top: -115px;
+    margin-top: -187px;
+    margin-bottom: 84px;
   }
 }
 
 .main {
   background-color: $basic-white;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-column-gap: 0px;
     margin-top: -15px;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(5, auto);
-  }
 }
+
 .main__title {
   font-size: 36px;
   line-height: 36px;
@@ -76,26 +68,23 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  grid-column-start: 1;
-  grid-column-end: -1;
   padding-top: 38px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    grid-column-start: 1;
-    grid-column-end: 4;
     margin-bottom: 33px;
     padding-top: 22px;
-    width: 75.5%;
+    width: 635px;
+    padding-left: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-top: 15px;
+    width: 1220px;
+    margin-top: 34px;
     margin-bottom: 19px;
-    padding-left: 110px;
+    padding-left: 0;
   }
 }
 
