@@ -5,7 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("csso");
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -35,14 +35,25 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("html"));
 }
 
-exports.default = gulp.series(
-  styles, scripts, server, watcher
-);
-
 // Styles
 
+const clean = () => {
+  return del("build");
+};
+
+exports.clean = clean;
+
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("./build"))
+    .pipe(sync.stream());
+}
+exports.html = html;
+
+
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("./source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -58,6 +69,7 @@ const styles = () => {
 
 exports.styles = styles;
 
+
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
@@ -68,6 +80,7 @@ const images = () => {
  }
 
  exports.images = images;
+
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
@@ -92,17 +105,12 @@ const copy = () => {
 
  exports.copy = copy;
 
- const clean = () => {
-    return del("build");
- };
-
- exports.clean = clean;
 
  const build = gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "html"
+  clean,
+   html,
+   copy,
+   styles,
  );
 
  exports.build = build;
