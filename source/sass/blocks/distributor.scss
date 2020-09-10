@@ -38,8 +38,9 @@
 }
 
 .distributor-title {
+  color: $special_black;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
   grid-column-start: 1;
@@ -48,7 +49,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
     width: 50%;
     margin-left: 70px;
   }
@@ -60,7 +61,8 @@
   }
 }
 
-.distributor__text{
+.distributor__text {
+  color: $special_dark-grey;
   font-size: 14px;
   line-height: 20px;
   grid-column-start: -1;
@@ -83,5 +85,14 @@
     grid-column-end: -2;
     margin-top: 19px;
     margin-right: 86px;
+    margin-bottom: 14px;
+  }
+}
+
+.distributor__city {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
   }
 }

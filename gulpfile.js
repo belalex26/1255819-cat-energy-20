@@ -19,6 +19,7 @@ const del = require("del");
     server: {
       baseDir: 'build'
     },
+    port: 3000,
     cors: true,
     notify: false,
     ui: false,
@@ -70,18 +71,6 @@ const styles = () => {
 exports.styles = styles;
 
 
-const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
- }
-
- exports.images = images;
-
-
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
@@ -114,3 +103,14 @@ const copy = () => {
  );
 
  exports.build = build;
+
+ const start = gulp.series(
+  clean,
+   html,
+   copy,
+   styles,
+   server,
+ );
+
+ exports.start = start;
+
