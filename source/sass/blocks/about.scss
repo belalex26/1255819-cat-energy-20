@@ -97,7 +97,6 @@
   }
 }
 
-
 .about__item:nth-of-type(2) {
 
   @media (min-width: $tablet-width) {
@@ -164,7 +163,7 @@
   margin-left: 81px;
   width: 70%;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 4px;
   margin-right: 0;
 
   &::before {
@@ -203,6 +202,7 @@
     line-height: 24px;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     margin-left: 0;
     width: 68%;
 
@@ -226,6 +226,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -2px;
     width: 250px;
   }
 }
@@ -266,5 +267,13 @@
       background-image: url("../img/advantage-clock@2x.png");
       background-size: 50px 52px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 99%;
   }
 }

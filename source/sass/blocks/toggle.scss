@@ -65,10 +65,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 7px 0 6px;
-    border-bottom: 1px solid rgba($basic-black, 0.23);
+    border-bottom: 1px dotted rgba($basic-black, 0.23);
 
     &:hover {
       border-color: rgba($special_black, 0.4);
+      border-bottom: 1px solid rgba($basic-black, 0.23);
     }
 
     &:active {

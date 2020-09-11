@@ -41,13 +41,13 @@
       <form class="form main__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__item form__cat">
           <div class="container">
-            <label class="form__label form__nickname">имя:*
+            <label class="form__label form__label--nickname">имя:*
               <input class="form__input" type="text" placeholder="барсик">
             </label>
-            <label class="form__label form__weight">вес (кг):*
+            <label class="form__label form__label--weight">вес (кг):*
               <input class="form__input" type="text" placeholder="7">
             </label>
-            <label class="form__label form__age">возраст (лет):
+            <label class="form__label form__label--age">возраст (лет):
               <input class="form__input" type="text" placeholder="7">
             </label>
           </div>
@@ -88,7 +88,7 @@
           <legend class="form__title">Комментарий</legend>
           <div class="container">
             <label class="form__label visually-hidden" for="comment"></label>
-            <textarea class="form__message" name="comment" id="comment" rows="9" cols="50" placeholder="расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__message" name="comment" id="comment" rows="7" cols="50" placeholder="расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
@@ -121,7 +121,7 @@
         <button class="link form__btn">отправить заявку</button>
       </form>
 
-      <p class="main__footnote">&#42; &#45; Обязательные поля</p>
+      <p class="main__footnote">&#42; &#8212; Обязательные поля</p>
       <section class="map">
         <h2 class="title visually-hidden">как добраться</h2>
         <div class="distributor">
@@ -129,7 +129,7 @@
             приглашаем <br>
             к сотрудничеству дилеров!
           <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="distributor__city">Санкт-Петербург</span>
           </p>
         </div>
         <div class="map-map">
@@ -146,13 +146,13 @@
           <section class="social footer__social">
             <h2 class="title visually-hidden">социальные сети</h2>
             <ul class="social__list">
-              <li class="social__item social__vk">
+              <li class="social__item social__item--vk">
                 <a class="social__link" href="#" aria-label="вконтакте"></a>
               </li>
-              <li class="social__item social__inst">
+              <li class="social__item social__item--inst">
                 <a class="social__link" href="#" aria-label="instagram"></a>
               </li>
-              <li class="social__item social__fb">
+              <li class="social__item social__item--fb">
                 <a class="social__link" href="#" aria-label="facebook"></a>
               </li>
             </ul>

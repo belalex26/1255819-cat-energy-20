@@ -6,6 +6,7 @@
   width: 320px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     border-top: none;
     display: grid;
     grid-template-columns: 324px 324px;
@@ -17,14 +18,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     grid-template-rows: auto auto;
     grid-column-gap: 80px;
-    grid-row-gap: 145px;
+    grid-row-gap: 149px;
     padding-top: 140px;
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
 }
 
@@ -89,7 +91,7 @@
     height: 30px;
     top: 29px;
     left: 45%;
-    background-image: url("../../img/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
     background-position: center;
   }
 
@@ -136,7 +138,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 70%;
-    margin-bottom: 79px;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
