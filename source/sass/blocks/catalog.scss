@@ -252,6 +252,13 @@
   background-image: url("../img/sprite.svg#icon-right-arrow-verylong");
   background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+
+    &::after {
+      top: -4px;
+    }
+  }
 }
 
 .catalog__text {
@@ -296,7 +303,7 @@
     margin-bottom: 57px;
 
     &::after {
-      top: 5px;
+      top: 7px;
       left: 132px;
     }
   }
