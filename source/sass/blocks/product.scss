@@ -47,14 +47,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
-    width: 50%;
+    width: 60%;
     padding-top: 12px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 19px;
-    width: 60%;
   }
 }
 .product__description {
@@ -169,3 +168,12 @@
   }
 }
 
+.product__link-title {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+}

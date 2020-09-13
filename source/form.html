@@ -52,7 +52,6 @@
             </label>
           </div>
         </fieldset>
-
         <fieldset class="form__item form__intention">
           <div class="form__intention-content">
             <label class="form__radio">
@@ -69,21 +68,19 @@
             </label>
           </div>
         </fieldset>
-
         <fieldset class="form__item form__owner">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <div class="container">
-          <div class="form__owner-content">
-            <label class="form__label">e-mail:*
-              <input class="form__input form__email" type="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="form__label">телефон:*
-              <input class="form__input form__phone" type="tel" placeholder="8 (960) 900-60-90" required  pattern="8[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}">
-            </label>
-          </div>
+            <div class="form__owner-content">
+              <label class="form__label">e-mail:*
+                <input class="form__input form__email" type="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="form__label">телефон:*
+                <input class="form__input form__phone" type="tel" placeholder="8 (960) 900-60-90" required  pattern="8[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}">
+              </label>
+            </div>
           </div>
         </fieldset>
-
         <fieldset class="form__item form__comment">
           <legend class="form__title">Комментарий</legend>
           <div class="container">
@@ -91,7 +88,6 @@
             <textarea class="form__message" name="comment" id="comment" rows="7" cols="50" placeholder="расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-
         <fieldset class="form__item form__optionally">
           <legend class="form__title">Дополнительно</legend>
           <div class="container">
@@ -100,17 +96,14 @@
                 <input class="form__checkbox-name" type="checkbox" name="optionally" value="sugar-substitute" checked>
                 <span class="form__checkbox-text">сахарозаменитель</span>
               </label>
-
               <label class="form__checkbox form__checkbox-water">
                 <input class="form__checkbox-name" type="checkbox" name="optionally" value="water">
                 <span class="form__checkbox-text">питьевая вода</span>
               </label>
-
               <label class="form__checkbox form__checkbox-milk">
                 <input class="form__checkbox-name" type="checkbox" name="optionally" value="milk">
                 <span class="form__checkbox-text">молоко</span>
               </label>
-
               <label class="form__checkbox form__checkbox-vitamins">
                 <input class="form__checkbox-name" type="checkbox" name="optionally" value="vitamins">
                 <span class="form__checkbox-text">витамины</span>
@@ -118,9 +111,8 @@
             </div>
           </div>
         </fieldset>
-        <button class="link form__btn">отправить заявку</button>
+        <button class="link form__btn" type="submit">отправить заявку</button>
       </form>
-
       <p class="main__footnote">&#42; &#8212; Обязательные поля</p>
       <section class="map">
         <h2 class="title visually-hidden">как добраться</h2>
@@ -128,11 +120,12 @@
           <p class="distributor-title">
             приглашаем <br>
             к сотрудничеству дилеров!
+          </p>
           <p class="section-text distributor__text">ул. Большая Конюшенная, д. 19/8
             <span class="distributor__city">Санкт-Петербург</span>
           </p>
         </div>
-        <div class="map-map">
+        <div class="map__wrapper">
           <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3000311692151!2d30.3219637864198!3d59.93877828687783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598681733418!5m2!1sru!2sru"></iframe><!--карта-->
         </div>
       </section>
@@ -146,20 +139,37 @@
           <section class="social footer__social">
             <h2 class="title visually-hidden">социальные сети</h2>
             <ul class="social__list">
-              <li class="social__item social__item--vk">
-                <a class="social__link" href="#" aria-label="вконтакте"></a>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="вконтакте">
+                  <svg class="social__icon social__icon--vk" width="23" height="18">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="social__item social__item--inst">
-                <a class="social__link" href="#" aria-label="instagram"></a>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="instagram">
+                  <svg class="social__icon social__icon--inst" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="social__item social__item--fb">
-                <a class="social__link" href="#" aria-label="facebook"></a>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="facebook">
+                  <svg class="social__icon social__icon--fb" width="23" height="22">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </section>
           <section class="copy footer__copy">
             <h2 class="title visually-hidden">копирайт</h2>
-              <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+            <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copy__link-text">HTML Academy</span>
+              <svg lass="copy__img" width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
+            </a>
           </section>
         </div>
       </div>

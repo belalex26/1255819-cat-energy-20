@@ -1,5 +1,5 @@
 .toggle {
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -53,7 +53,7 @@
   }
 }
 
-.toggle__label{
+.toggle__label {
   font-size: 16px;
   line-height: 20px;
   font-family: $font-family-primary;
@@ -64,7 +64,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 7px 0 6px;
+    padding-top: 7px;
+    padding-bottom: 6px;
     border-bottom: 1px dotted rgba($basic-black, 0.23);
 
     &:hover {
@@ -82,12 +83,19 @@
   position: relative;
   display: block;
   width: 84px;
-  margin: 3px 18px;
+  margin-top: 3px;
+  margin-right: 18px;
+  margin-bottom: 3px;
+  margin-left: 18px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
-    margin: 0 21px 0 23px;
-    padding: 15px 0 13px;
+    margin-top: 0;
+    margin-right: 21px;
+    margin-bottom: 0;
+    margin-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 13px;
   }
 }
 
@@ -204,6 +212,7 @@
 }
 
 .toggle__item {
+
   &::after {
     display: none;
   }
@@ -214,12 +223,10 @@
   }
 }
 
-
 .toggle__item--before {
   position: absolute;
   top: 0;
   left: 0;
-
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {

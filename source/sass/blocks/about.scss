@@ -63,7 +63,7 @@
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
+    margin-top: 43px;
   }
 }
 
@@ -110,6 +110,7 @@
   }
 
   @media (min-width: $desktop-width) {
+
     &::before {
       left: 115px;
       top: 95px;
@@ -120,6 +121,7 @@
 .about__item:nth-of-type(3) {
 
   @media (min-width: $tablet-width) {
+
     &::before {
       left: 110px;
       top: 95px;
@@ -138,6 +140,7 @@
 }
 
 .about__item:nth-of-type(4) {
+
   @media (min-width: $tablet-width) {
     margin-left: 14px;
 
@@ -184,10 +187,8 @@
     left: -65px;
     position: absolute;
     background-image: url("../img/advantage-leaf@1x.png");
-
     background-position: center;
     background-repeat: no-repeat;
-
 
     @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -259,6 +260,7 @@
 }
 
 .about__item:nth-of-type(4) .about__text{
+
   &::after {
     background-image: url("../img/advantage-clock@1x.png");
 

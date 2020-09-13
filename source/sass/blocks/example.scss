@@ -4,6 +4,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
     background:
       linear-gradient( to top, $basic_grey 42.5%, $basic-white 42.5%);
   }
@@ -43,7 +44,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-left: 0;
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,6 +179,7 @@
 .example__time {
   padding: 14px 18px;
   border: 1px solid $special_grey;
+  margin-right: 5px;
 
   &::before {
     content: "затрачено времени";
@@ -198,8 +200,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 14px;
     padding-bottom: 18px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-left: 5px;
+    margin-right: 0;
 
     &::before {
       font-size: 14px;
@@ -236,7 +240,7 @@
     text-align: right;
     font-size: 20px;
     line-height: 30px;
-    width: 200px;
+    width: 188px;
     padding-right: 30px;
     justify-self: end;
     grid-column-start: -1;

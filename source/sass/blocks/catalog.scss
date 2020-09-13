@@ -18,7 +18,7 @@
   position: relative;
   display: block;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 34px;
   padding-bottom: 17px;
   font-size: 24px;
   line-height: 37px;
@@ -127,7 +127,7 @@
 .catalog__pro .catalog__title {
   margin-left: 44px;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: 24px;
@@ -140,7 +140,7 @@
     background-position: center;
   }
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 35px;
@@ -214,12 +214,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 100px;
     width: 50px;
-    height: 20px;
-    background-image: url("../img/icon-right-arrow-long.svg");
+    height: 18px;
+    background-image: url("../img/sprite.svg#icon-right-arrow-long");
     background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left center;
   }
 
   @media (min-width: $tablet-width) {
@@ -239,14 +241,15 @@
 }
 
 .catalog__link:hover {
+
   &::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: -2px;
   left: 100px;
   width: 50px;
   height: 20px;
-  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-image: url("../img/sprite.svg#icon-right-arrow-verylong");
   background-repeat: no-repeat;
   }
 }
@@ -258,7 +261,7 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0 auto;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 20px;
   border-bottom: 1px solid $gray;
 
@@ -293,7 +296,7 @@
     margin-bottom: 57px;
 
     &::after {
-      top: 10px;
+      top: 5px;
       left: 132px;
     }
   }
@@ -302,12 +305,13 @@
     margin-top: 0;
 
     &::after {
-      top: 9px;
+      top: 6px;
     }
   }
 }
 
 .catalog__pro .catalog__link {
+  margin-top: 19px;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -315,7 +319,7 @@
     margin-bottom: 56px;
 
     &::after {
-      top: 9px;
+      top: 6px;
       left: 128px;
     }
   }
@@ -332,7 +336,7 @@
 
   @media (min-width: $desktop-width) {
     width: 454px;
-    padding-top: 62px;
+    padding-top: 59px;
     padding-bottom: 6px;
   }
 }

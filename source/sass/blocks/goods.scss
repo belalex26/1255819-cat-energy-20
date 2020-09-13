@@ -45,6 +45,7 @@
 }
 
 .goods__wrapper {
+
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
@@ -91,7 +92,7 @@
     height: 30px;
     top: 29px;
     left: 45%;
-    background-image: url("../img/icon-plus.svg");
+    background-image: url("../img/sprite.svg#icon-plus-mobile");
     background-position: center;
   }
 
@@ -108,6 +109,7 @@
       height: 60px;
       top: 50px;
       left: 30.8%;
+      background-image: url("../img/sprite.svg#icon-plus");
     }
   }
 

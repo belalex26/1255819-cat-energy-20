@@ -9,7 +9,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
+var svgSprite = require('gulp-svg-sprite');
 
 
 const imagemin = require('gulp-imagemin');
@@ -38,6 +38,19 @@ const watcher = () => {
 
 gulp.task("clean", function () {
   return del("build");
+});
+
+gulp.task("svgSprite", function () {
+  return gulp.src("source/img/sprite/*.svg")
+      .pipe(svgSprite({
+              mode: {
+                  stack: {
+                      sprite: "../sprite.svg"
+              }
+          },
+        }
+      ))
+      .pipe(gulp.dest("source/img/"));
 });
 
  gulp.task("copy", function() {
@@ -85,17 +98,8 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"))
 });
 
-gulp.task("sprite", function () {
-  return gulp.src("sourse/img/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
  gulp.task("build", gulp.series(
-   "clean", "copy", "html", "style", "images", "sprite",
+   "clean", "svgSprite", "copy", "html", "style", "images",
 ));
 
 

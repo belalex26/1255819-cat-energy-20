@@ -5,25 +5,24 @@
 
 .copy__link {
   text-decoration: none;
-  color: $special_dark-grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 281px;
+  fill: $dark_grey-2;
 
-  &::after {
-    content: "";
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 34px;
-    margin-left: 20px;
+  &:hover {
+    fill: $basic_green;
   }
 
   &:focus,
   &:active {
     outline: none;
     opacity: 0.3;
+  }
+
+  .copy__link-text {
+    color: $special_dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -37,10 +36,3 @@
     margin-top: 3px;
   }
 }
-
-.copy__link:hover {
-  &::after {
-    background-image: url("../img/htmlacademy-hover.svg");
-  }
-}
-
